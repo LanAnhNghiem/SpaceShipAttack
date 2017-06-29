@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d0b2bf9337b9cb84487bb203dfe63bee
+timeCreated: 1498705908
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Zilap Black Storm
+  fontNames:
+  - Zilap Black Storm
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

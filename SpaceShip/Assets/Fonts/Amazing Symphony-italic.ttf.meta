@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3ab415b1d0caa8c4ca661a3510afa4bb
+timeCreated: 1498705906
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Amazing Symphony
+  fontNames:
+  - Amazing Symphony
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 85780ed8781481c458771fa55d4a3e27
+timeCreated: 1498705907
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: The Creation
+  fontNames:
+  - The Creation
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

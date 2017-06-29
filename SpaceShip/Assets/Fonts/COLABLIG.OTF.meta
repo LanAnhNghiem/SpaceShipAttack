@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3530719f14456ac41840b2cb84b374e2
+timeCreated: 1498574967
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ColaborateLight
+  fontNames:
+  - ColaborateLight
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
