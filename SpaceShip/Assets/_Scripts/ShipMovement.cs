@@ -5,98 +5,89 @@ using UnityEngine.VR;
 
 public class ShipMovement : MonoBehaviour {
     public Transform camera;
+    public GameObject cameraContainer;
     public GameObject GVREditorEmulator;
+    public bool isStart;
     Quaternion prevRotation;
+    CameraController camControl;
+    ShipController shipControl;
     float speed = 30f;
-    bool isTurnLeft;
-    bool isTurnRight;
-    bool isTurnUp;
-    bool isTurnDown;
-    bool isStart;
+    Vector3 angleX;
+    Vector3 angleY;
     Vector3 targetPos;
     void Start()
     {
         prevRotation = camera.rotation;
-        isTurnLeft = false;
-        isTurnRight = false;
-        isTurnUp = false;
-        isTurnDown = false;
         isStart = false;
-        transform.position = new Vector3(0, 0, -2);
-        targetPos = new Vector3(0, 0, 5.08f);
+        transform.position = new Vector3(0, 4f, 3.08f);
+        targetPos = new Vector3(0, -1, 3.08f);
+        camControl = cameraContainer.GetComponent<CameraController>();
+        camControl.enabled = false;
+        shipControl = GetComponent<ShipController>();
+        shipControl.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!isStart)
+        if (!isStart)
         {
             float step = Time.deltaTime * 2;
             transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
             if (transform.position == targetPos)
+            {
                 isStart = true;
+                camControl.enabled = true;
+            }
         }
         else
         {
+            shipControl.enabled = true;
             GVREditorEmulator.active = true;
-            if (camera.rotation != prevRotation)
-            {
-                if (prevRotation.eulerAngles.y < camera.eulerAngles.y)
-                {
-                    //print("turn right");
-                    isTurnRight = true;
-                }
-                else if (prevRotation.eulerAngles.y > camera.eulerAngles.y)
-                {
-                    //print("turn left");
-                    isTurnLeft = true;
-                }
-                //if(prevRotation.eulerAngles.x > camera.eulerAngles.x)
-                //{
-                //    //print("up");    
-                //    isTurnUp = true;
-                //}
-                //else if (prevRotation.eulerAngles.x < camera.eulerAngles.x)
-                //{
-                //    //print("down");
-                //    isTurnDown = true;
-                //}
-            }
-            else
-            {
-                // print("normal");
-                isTurnLeft = false;
-                isTurnRight = false;
-                isTurnUp = false;
-                isTurnDown = false;
-            }
-
-            Turning(isTurnLeft, isTurnRight, isTurnUp, isTurnDown);
-            prevRotation = camera.rotation;
+            Turning();
         }
     }
-    void Turning(bool isLeft, bool isRight, bool isUp, bool isDown)
+    
+    void Turning()
     {
-        print("Angle: " + transform.eulerAngles.z);
-        if(isLeft && !isRight)
+        if (Input.GetAxis("Horizontal") != -0.5 || Input.GetAxis("Vertical") != -0.5)
         {
-            transform.Rotate(Vector3.forward * Time.deltaTime *speed);
+            if (Input.GetAxis("Vertical") == 0.5)
+            {
+                angleY = Vector3.right * Time.deltaTime * speed;
+                transform.Rotate(angleY);//right
+            }
+            else if (Input.GetAxis("Vertical") > 0.5)
+            {
+                angleY = Vector3.left * Time.deltaTime * speed;
+                transform.Rotate(angleY); //left
+            }
+            if (Input.GetAxis("Horizontal") == 0.5)
+            {
+                angleX = Vector3.back * Time.deltaTime * speed;
+                transform.Rotate(angleX); //down
+            }
+            else if (Input.GetAxis("Horizontal") > 0.5)
+            {
+                angleX = Vector3.forward * Time.deltaTime * speed;
+                transform.Rotate(angleX);//up
+            }
         }
-        if(!isLeft && isRight)
+        if (Input.GetAxis("Vertical") == -0.5)
         {
-            transform.Rotate(Vector3.back * Time.deltaTime * speed);
+            //float angle = Vector3.AngleBetween(angleY, Vector3.zero);
+            if (transform.eulerAngles.x < 359 && transform.eulerAngles.x > 180)
+            {
+                transform.Rotate(Vector3.right * Time.deltaTime * speed);
+            }
+            else if (transform.eulerAngles.x > 1 && transform.eulerAngles.x < 180)
+            {
+                transform.Rotate(Vector3.left * Time.deltaTime * speed);
+            }
         }
-        //if (isUp && !isDown)
-        //{
-        //    transform.Rotate(Vector3.left * Time.deltaTime * speed);
-        //}
-        //if (!isUp && isDown)
-        //{
-        //    transform.Rotate(Vector3.right * Time.deltaTime * speed);
-        //}
-        if (!isLeft && !isRight)
+        if (Input.GetAxis("Horizontal") == -0.5)
         {
-            if (transform.eulerAngles.z < 359 && transform.eulerAngles.z >180)
+            if (transform.eulerAngles.z < 359 && transform.eulerAngles.z > 180)
             {
                 transform.Rotate(Vector3.forward * Time.deltaTime * speed);
             }
@@ -104,21 +95,6 @@ public class ShipMovement : MonoBehaviour {
             {
                 transform.Rotate(Vector3.back * Time.deltaTime * speed);
             }
-            //else if(transform.eulerAngles.z >= 359 || transform.eulerAngles.z <= 1)
-            //{
-            //    transform.eulerAngles.Set(transform.eulerAngles.x, transform.eulerAngles.y, 0);
-            //}
-            //if (transform.eulerAngles.x < 360 && transform.eulerAngles.x > 180)
-            //{
-            //    //if (transform.eulerAngles.x > 359)
-            //    //    transform.eulerAngles.Set(0, transform.eulerAngles.y, transform.eulerAngles.z);
-            //    //else
-            //        transform.Rotate(Vector3.right * Time.deltaTime * speed);
-            //}
-            //else if (transform.eulerAngles.x > 0 && transform.eulerAngles.x < 180)
-            //{
-            //    transform.Rotate(Vector3.left * Time.deltaTime * speed);
-            //}
         }
     }
 }

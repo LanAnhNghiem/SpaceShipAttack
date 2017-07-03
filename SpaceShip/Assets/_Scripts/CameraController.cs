@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour {
-
+    public Transform player;
+    public float smoothTime;
+    Vector3 velocity;
+    Vector3 offset;
 	// Use this for initialization
 	void Start () {
-        
+        offset = new Vector3(0, 3, -6);
+        transform.SetParent(null);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        //transform.position = new Vector3(1, 1, 2);
-	}
+
+    private void LateUpdate()
+    {
+        transform.position = Vector3.SmoothDamp(transform.position, player.TransformPoint(offset), ref velocity, smoothTime);// bien toa do offset tu local thanh world
+        transform.LookAt(player.position);
+
+    }
 
 }
