@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
-	private void LoadScene(int idx)
+	public void LoadScene(int idx)
 	{
 		SceneManager.LoadScene(idx);
 	}
 
 	public void LoadNextScene()
 	{
-		int currIndex = SceneManager.GetActiveScene ().buildIndex;
+        int currIndex = SceneManager.GetActiveScene ().buildIndex;
 		LoadScene(currIndex + 1);
 	}
 

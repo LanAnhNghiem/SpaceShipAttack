@@ -20,4 +20,15 @@ public class CanvasAnimationController : MonoBehaviour {
     {
         canvasAnimator.SetBool("IsInstructionsShow", false);
     }
+
+    public void FadeOut()
+    {
+        canvasAnimator.SetBool("IsFadeOut", true);
+    }
+
+    public void LoadPlaySceneAfterFadeOut()
+    {
+        LevelManager obj = FindObjectOfType<LevelManager>();
+        obj.LoadNextScene();
+    }
 }

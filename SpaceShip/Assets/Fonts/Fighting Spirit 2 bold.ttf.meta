@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bafdb49401c702340a6604c14294de41
+timeCreated: 1499050361
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Fighting Spirit turbo
+  fontNames:
+  - Fighting Spirit turbo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5b6e97fc0aeb88d4f97021ea9bb2af73, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
