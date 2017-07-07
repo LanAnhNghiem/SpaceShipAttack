@@ -199,10 +199,19 @@
     <Compile Include="Assets\LightningBolt\LightningBoltScript.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
+    <Compile Include="Assets\_Scripts\Bullet.cs" />
     <Compile Include="Assets\_Scripts\CameraController.cs" />
+    <Compile Include="Assets\_Scripts\Enemies.cs" />
+    <Compile Include="Assets\_Scripts\EnemyManager.cs" />
+    <Compile Include="Assets\_Scripts\Path.cs" />
+    <Compile Include="Assets\_Scripts\PropellerRotate.cs" />
+    <Compile Include="Assets\_Scripts\Rocket.cs" />
+    <Compile Include="Assets\_Scripts\RocketLaunching.cs" />
     <Compile Include="Assets\_Scripts\ShipController.cs" />
     <Compile Include="Assets\_Scripts\ShipMovement.cs" />
     <Compile Include="Assets\_Scripts\ShipShooting.cs" />
+    <Compile Include="Assets\_Scripts\Waypoint.cs" />
+    <Compile Include="Assets\_Scripts\WaypointManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleVR\Demos\Environment\DemoEnvUnlitGrayscale.shader" />
