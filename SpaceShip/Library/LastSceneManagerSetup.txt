@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/OverScene.unity
+=======
+- path: Assets/_Scenes/PlayScene.unity
+>>>>>>> refs/remotes/origin/master
   isLoaded: 1
   isActive: 1

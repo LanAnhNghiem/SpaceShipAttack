@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SceneManager.cs">
     <Files>
       <File FileName="Assets\Scripts\SceneManager.cs" Line="19" Column="1" />
+=======
+﻿<Properties StartupItem="SpaceShip.Plugins.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs">
+    <Files>
+      <File FileName="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" Line="33" Column="1" />
+>>>>>>> refs/remotes/origin/master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
