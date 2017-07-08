@@ -1,5 +1,4 @@
 ﻿
-<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceShip", "Assembly-CSharp-firstpass.csproj", "{557240D2-06B7-9CAE-92E6-785A892F8BB5}"
@@ -9,17 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceShip", "Assembly-CSharp-Editor-firstpass.csproj", "{1D33AAAD-4125-6640-2207-AF04BD3F817F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceShip", "Assembly-CSharp-Editor.csproj", "{D6CC51D9-184C-E0BE-0F78-94FFA2130808}"
-=======
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceShip.Plugins", "SpaceShip.Plugins.csproj", "{622CB554-E4F6-1318-7EF0-6F57913C8B96}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceShip", "SpaceShip.csproj", "{93DD962B-9605-4AE2-5179-C50C5D18A461}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceShip.Editor.Plugins", "SpaceShip.Editor.Plugins.csproj", "{A9EA9DFD-7AA2-B50E-5795-F9143C287035}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceShip.Editor", "SpaceShip.Editor.csproj", "{4CFACAB2-4F24-B486-1956-5081CE6E9425}"
->>>>>>> refs/remotes/origin/master
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,7 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
 		{557240D2-06B7-9CAE-92E6-785A892F8BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{557240D2-06B7-9CAE-92E6-785A892F8BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{557240D2-06B7-9CAE-92E6-785A892F8BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,32 +31,11 @@ Global
 		{D6CC51D9-184C-E0BE-0F78-94FFA2130808}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6CC51D9-184C-E0BE-0F78-94FFA2130808}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6CC51D9-184C-E0BE-0F78-94FFA2130808}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{622CB554-E4F6-1318-7EF0-6F57913C8B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{622CB554-E4F6-1318-7EF0-6F57913C8B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{622CB554-E4F6-1318-7EF0-6F57913C8B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{622CB554-E4F6-1318-7EF0-6F57913C8B96}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93DD962B-9605-4AE2-5179-C50C5D18A461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93DD962B-9605-4AE2-5179-C50C5D18A461}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93DD962B-9605-4AE2-5179-C50C5D18A461}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93DD962B-9605-4AE2-5179-C50C5D18A461}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A9EA9DFD-7AA2-B50E-5795-F9143C287035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9EA9DFD-7AA2-B50E-5795-F9143C287035}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9EA9DFD-7AA2-B50E-5795-F9143C287035}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9EA9DFD-7AA2-B50E-5795-F9143C287035}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4CFACAB2-4F24-B486-1956-5081CE6E9425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CFACAB2-4F24-B486-1956-5081CE6E9425}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CFACAB2-4F24-B486-1956-5081CE6E9425}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CFACAB2-4F24-B486-1956-5081CE6E9425}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> refs/remotes/origin/master
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-<<<<<<< HEAD
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
-=======
->>>>>>> refs/remotes/origin/master
 EndGlobal
